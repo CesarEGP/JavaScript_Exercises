@@ -484,8 +484,8 @@ Suma(12, 19); */
 Crea una función llamada calcularPromedio que tome un arreglo de números como argumento y devuelva el promedio de esos números. */
 
 /* let acum=0;
-let arreglo = [12, 24, 64, 86, 93, 83, 78, 36];
-let calcularPromedio = function (array) {
+let arreglo = [12, 24, 64, 86, 93, 83, 78, 36]; */
+/* let calcularPromedio = function (array) {
     for (let i = 0; i < array.length; i++) {
         acum = array[i]+acum;        
     }
@@ -496,6 +496,144 @@ calcularPromedio(arreglo); */
 /* 45. Ejercicio de funciones flecha:
 Convierte la función calcularPromedio en una función flecha. */
 
-let calcularPromedio = array => 
+/* let acum=0;
+let arreglo = [12, 24, 64, 86, 93, 83, 78, 36]; 
+let calcularPromedio = array =>{
+    for (let i = 0; i < array.length; i++) {
+        acum = array[i]+acum;        
+    }
+    return console.log(`El primedio es de: ${acum/array.length}`);
+} 
+calcularPromedio(arreglo); */
 
+/* 46. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con la longitud de cada palabra. */
 
+/* let arreglo = [`carro`, `camioneta`, `avion`, `biciclecta`, `camion`, `barco`, `helicoptero`];
+let longitud = function (array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i].length);
+    }
+}
+longitud(arreglo); */
+
+/* 47. Ejercicio de funciones:
+Crea una función llamada esPar que tome un número como argumento y devuelva true si el número es par, y false si no lo es. */
+/* let numero = 13;
+let condicional = undefined;
+function esPar(num) {
+    if (num % 2 == 0) {
+        return console.log(`El numero: ${num} es par, ${true}`);
+    } else {
+        return console.log(`El numero: ${num} es impar, ${false}`);
+    }
+}
+esPar(numero); */
+
+/* 48. Ejercicio de funciones flecha:
+Convierte la función esPar en una función flecha. */
+
+/* let numero = 29;
+let esPar = num => num % 2 == 0 ? console.log(`El numero: ${num} es par, ${true}`) : console.log(`El numero: ${num} es impar, ${false}`);
+esPar(numero); */
+
+/* 49. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva un nuevo arreglo con solo los números pares. */
+
+/* let arreglo = [45, 124, 2457, 796, 1354, 54, 49, 135, 532, 28, 2754];
+let Par = function (array) {
+    let indice = 0;
+    let arregloPar = [];
+    for (let index = 0; index < array.length; index++) {        
+        if (array[index] % 2 == 0) {            
+            arregloPar[indice] = array[index];
+            indice++;
+        }        
+    }
+    return arregloPar;
+}
+console.log(Par(arreglo)); */
+
+/* 50. Ejercicio de funciones:
+Crea una función llamada convertirAMayusculas que tome una cadena como argumento y devuelva la cadena en mayúsculas. */
+
+/* let cadena = (`Una vez una tarde llevaba un niño un pollo a la espalda, el pollo el maestro no sabía que cosa estaba llevando, 
+y quería preguntarle al maestro y le decía quería hacerle creer y le decía, preguntarle si estaba vivo o estaba muerto. Si estaba muerto 
+le enseñaba el pollo vivo pero si estaba viv perdón sí estaba muerto si el el maestro le decía que estaba muerto el niño el profesor 
+le entrega..el niño le entregaba vivo pero si le decía que estaba mue..vivo el niño torcia el cuello del pollo le enseñaba el pollo muerto 
+`);
+function Mayusculas(string) {
+    return console.log(string.toUpperCase());
+}
+Mayusculas(cadena); */
+
+/* 51. Ejercicio de funciones:
+Crea una función llamada sumar que tome dos números como argumentos y devuelva la suma de esos números. */
+
+/* let numero1 = 123;
+let numero2 = 322;
+function Sumar(num1, num2) {
+    return console.log(`La suma de los numeros es: ${num1 + num2}`);
+}
+Sumar(numero1, numero2); */
+
+/* 52. Ejercicio de funciones flecha:
+Convierte la función sumar en una función flecha. */
+
+/* let Sumar = (num1, num2) => (num1 + num2);
+let numero1 = 12;
+let numero2 = 82;
+console.log(`La suma de ${numero1} y ${numero2} es: ${Sumar(numero1, numero2)}`); */
+
+/* 53. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva la suma de todos los elementos del arreglo. */
+
+/* let arreglo = [313, 1253, 457345, 26645, 745, 312, 3, 2, 2];
+let acum = 0;
+let Sumar = function (array) {
+    for (let i = 0; i < array.length; i++) {
+        acum = acum + array[i];
+    }
+    return console.log(`La suma de los numeros es: ${acum}`);
+}
+Sumar(arreglo); */
+
+/* 54.Ejercicio de funciones:
+Crea una función llamada esPalindromo que tome una cadena como argumento y devuelva true si la cadena es un palíndromo 
+(se lee igual de izquierda a derecha que de derecha a izquierda), y false si no lo es. */
+
+/* 55. Ejercicio de funciones flecha:
+Convierte la función esPalindromo en una función flecha. */
+
+/* 56. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con solo las palabras que sean palíndromos. */
+
+/* 57.Ejercicio de funciones:
+Crea una función llamada duplicarElementos que tome un arreglo como argumento y devuelva un nuevo arreglo con los elementos duplicados. */
+/* let arreglo = [`hola`, `mundo`, 12, 322, `sommbrero`, true, false, `a`];
+function duplicarElementos(array) {
+    let arreglo2 = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        arreglo2[indice] = array[i];
+        arreglo2[indice + 1] = array[i];
+        indice = indice + 2;
+    }
+    return arreglo2;
+}
+console.log(duplicarElementos(arreglo)); */
+
+/* .58 Ejercicio de funciones flecha:
+Convierte la función duplicarElementos en una función flecha. */
+/* let arreglo = [`hola`, `mundo`, 12, 322, `sommbrero`, true, false, `a`];
+let duplicarElementos = array => {
+    let arreglo2 = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        arreglo2[indice] = array[i];
+        arreglo2[indice + 1] = array[i];
+        indice = indice + 2;
+    }
+    return arreglo2;
+}
+console.log(duplicarElementos(arreglo)); */
