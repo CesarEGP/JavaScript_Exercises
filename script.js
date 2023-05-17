@@ -637,3 +637,461 @@ let duplicarElementos = array => {
     return arreglo2;
 }
 console.log(duplicarElementos(arreglo)); */
+
+/* .59 Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva un nuevo arreglo con solo los números mayores a 10. */
+/* let arreglo = [32, 1, 24, 3, 5, 51, 3, 86, 39, 2, 0, 24, 1];
+let nuevoArreglo = [];
+let indice = 0;
+let Mayores = function (array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 10) {
+            nuevoArreglo[indice] = array[i];
+            indice++;
+        }
+    }
+    return nuevoArreglo;
+};
+console.log(Mayores(arreglo)); */
+
+/* .60 Ejercicio de funciones:
+Crea una función llamada invertirCadena que tome una cadena como argumento y devuelva la cadena invertida. */
+
+/* let cadena = (`Cadena de prueba para la funcion invertirCadena`);
+function invertirCadena(string){
+    return string.split('').reverse().join(``);    
+}*/
+/* console.log(`${invertirCadena(cadena)}`); */
+/* split(``) sirve para separar la cadena en caracteres
+    reverse() invierte el orden de los caracteres o elementos
+    join() une los caracteres o elementos en su forma inicial  */
+
+/* 61. Ejercicio de funciones:
+Crea una función llamada calcularFactorial que tome un número como argumento y devuelva el factorial de ese número. */
+
+/* let numero = 6;
+let cont = 1;
+function calcularFactorial(num) {
+    for (var i = 1; i <= num; i++) {        
+        cont= i*cont;        
+    }
+    console.log(`faltorial de ${num} es ${cont}`);
+}
+calcularFactorial(numero); */
+
+/* 62. Ejercicio de funciones flecha:
+Convierte la función calcularFactorial en una función flecha. */
+
+/* let numero = 8;
+let cont =1 ;
+let calcularFactorial = num =>{
+    for (var i = 1; i <= num; i++) {        
+        cont= i*cont;        
+    }
+    console.log(`faltorial de ${num} es ${cont}`);
+};
+calcularFactorial(numero); */
+
+/* 63. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva el número más grande del arreglo. */
+
+/* let numeros = [123, 14421, 12312, 322, 3214, 654, 28, 4545524, 542, 1];
+let mayor = 0;
+let grande = function (array) {
+    for (let indice = 0; indice < array.length; indice++) {             
+        if(array[indice] > mayor){
+            mayor=array[indice];
+        }
+    }
+    return console.log(`El numero mayor de la cadena es: ${mayor}`);
+}
+grande(numeros); */
+
+/* 64. Ejercicio de funciones:
+Crea una función llamada convertirAMinusculas que tome una cadena como argumento y devuelva la cadena en minúsculas. */
+
+/* let cadena = (`Una PErsonA es FElIZ cuAndo LoGRA su FelICIdAd`);
+function convertirAMinusculas(string){
+    return console.log(string.toLowerCase());
+}
+convertirAMinusculas(cadena); */
+
+/* .65 Ejercicio de funciones flecha:
+Convierte la función convertirAMinusculas en una función flecha. */
+
+/* let cadena = (`Una PErsonA es FElIZ cuAndo LoGRA su FelICIdAd`);
+let convertirAMinusculas = string => console.log(string.toLowerCase());
+convertirAMinusculas(cadena); */
+
+/* 66. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con 
+solo las palabras que empiecen con la letra 'a'. */
+
+/* let arreglo = [`ayudar`, `arreglo`, `epicentro`, `dialogar`, `framework`, `apoyar`];
+let EmpezarA = function (array) {
+    let nuevoArreglo = [];
+    let index = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i][0] == 'a') {
+            nuevoArreglo[index] = array[i];
+            index++;
+        }
+    }
+    return console.log(nuevoArreglo);
+};
+EmpezarA(arreglo); */
+
+/* 67. Ejercicio de funciones:
+Crea una función llamada obtenerLongitudPromedio que tome un arreglo de palabras como argumento y 
+devuelva la longitud promedio de las palabras en el arreglo. */
+
+/* let arreglo = [`ayudar`, `arreglo`, `epicentro`, `dialogar`, `framework`, `apoyar`];
+let cont=0;
+function obtenerLongitudPromedio(array){
+    for (let i = 0; i < array.length; i++) {
+        cont=cont+array[i].length;        
+    }
+    return console.log(`El arreglo tiene como promedio de caracteres por palabra : ${cont/array.length}`);
+}
+obtenerLongitudPromedio(arreglo); */
+
+/* 68. Ejercicio de funciones flecha:
+Convierte la función obtenerLongitudPromedio en una función flecha. */
+
+/* let arreglo = [`ayudar`, `arreglo`, `epicentro`, `dialogar`, `framework`, `apoyar`];
+let cont = 0;
+let obtenerLongitudPromedio = array => {
+    for (let i = 0; i < array.length; i++) {
+        cont = cont + array[i].length;
+    }
+    return console.log(`El arreglo tiene como promedio de caracteres por palabra : ${cont / array.length}`);
+};
+obtenerLongitudPromedio(arreglo); */
+
+/* 69. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva la suma de los números impares. */
+
+/* let numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let ImparSuma = function (num) {
+    let acum = 0;
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] % 2 !== 0) {
+            acum = acum + num[i];
+        }
+    }
+    return console.log(`La suma de los numero impares es de: ${acum}`);
+}
+ImparSuma(numero); */
+
+/* 70. Ejercicio de funciones:
+Crea una función llamada contarVocales que tome una cadena como argumento y devuelva la cantidad de vocales que contiene. */
+
+/* let cadena = (`Al fundar la universidad hoy estoy celebrando la fundación de la universidad, by cesar acuña`);
+function contarVocales(string) {
+    let cont = 0;
+    let nuevaCadena = string.toLowerCase();
+    for (let i = 0; i <= nuevaCadena.length; i++) {
+        if (nuevaCadena[i] == "a" || nuevaCadena[i] == "e" || nuevaCadena[i] == "i" || nuevaCadena[i] == "o" || nuevaCadena[i] == "u") {
+            cont++;
+        }
+    }
+    return console.log(`La cantidad de vocales es: ${cont}`);
+}
+contarVocales(cadena); */
+
+/* 71. Ejercicio de funciones:
+Crea una función llamada esPrimo que tome un número como argumento y devuelva true si es un número primo y false si no lo es. */
+
+/* los numeros primos son divisibles entre ellos mismos y 1, y mayores a 1 */
+/* let numero = 7;
+function esPrimo(num) {
+    if (num <= 1) {
+        return false;
+    }  
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+esPrimo(numero); */
+
+/* 72. Ejercicio de funciones flecha:
+Convierte la función esPrimo en una función flecha. */
+
+/* let numero = 13;
+let esPrimo = num => {
+    if (num <= 1) {
+        return false;
+    }
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return console.log(`El numero ${num} es`);;
+};
+esPrimo(numero); */
+
+/* 73. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con las palabras ordenadas alfabéticamente. */
+
+/* let arreglo = [`computadora`, `colegio`,`universidad`, `docente`, `maestro`, `compañero`];
+let Ordenar = function(array){
+    let nuevoArreglo = [];
+    nuevoArreglo = array.sort();    
+    return console.log(nuevoArreglo);   
+}
+Ordenar(arreglo); */
+
+/* 74. Ejercicio de funciones:
+Crea una función llamada filtrarPositivos que tome un arreglo de números como argumento y devuelva un nuevo arreglo con solo los números positivos. */
+
+/* let arreglo = [124, -12465, 63464, -216, 72, 76, -243, 16];
+function filtrarPositivos(arreglo) {
+    let nuevoArreglo = [];
+    let indice = 0;
+    for (let i = 0; i < arreglo.length; i++) {
+        if (arreglo[i] >= 0) {
+            nuevoArreglo[indice] = arreglo[i];
+            indice++;
+        }
+    }
+    return nuevoArreglo;
+}
+console.log(filtrarPositivos(arreglo)); */
+
+/* 75. Ejercicio de funciones flecha:
+Convierte la función filtrarPositivos en una función flecha. */
+
+/* let arreglo = [124, -12465, 63464, -216, 72, 76, -243, 16];
+let filtrarPositivos = num =>{
+    let nuevoArreglo = [];
+    let indice = 0;
+    for (let i = 0; i < arreglo.length; i++) {
+        if (arreglo[i] >= 0) {
+            nuevoArreglo[indice] = arreglo[i];
+            indice++;
+        }
+    }
+    return nuevoArreglo;
+};
+console.log(filtrarPositivos(arreglo)); */
+
+/* 76. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de objetos como argumento y devuelva un nuevo arreglo con solo los objetos que tengan una propiedad edad mayor a 18. */
+
+/* let persona = {
+    nombres: `Cesar`,
+    edad: 23,
+    ciudad: `Arequipa`
+};
+
+let persona2 = {
+    nombres: `Juan`,
+    edad: 17,
+    ciudad: `Lima`
+};
+let persona3 = {
+    nombres: `Carlos`,
+    edad: 28,
+    ciudad: `Tumbess`
+};
+let arregloObj = [persona, persona2, persona3];
+let Mayores = function (obj) {
+    let nuevoArreglo = [];
+    let indice = 0;
+    for (let i = 0; i < obj.length; i++) {
+        if (obj[i].edad >= 18) {
+            nuevoArreglo[indice] = obj[i];
+            indice++;
+        }
+    }
+    return nuevoArreglo;
+}
+console.log(Mayores(arregloObj)); */
+
+/* 77. Ejercicio de funciones:
+Crea una función llamada obtenerPromedioPares que tome un arreglo de números como argumento y devuelva el promedio de los números pares en el arreglo. */
+
+/* let arreglo = [12, 324, 52, 315, 153, 322, 6, 89, 35, 15, 61];
+function obtenerarregloPar(array) {
+    let nuevoArregloPar = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            nuevoArregloPar[indice] = array[i];
+            indice++;
+        }
+    }
+    return nuevoArregloPar;
+};
+function obtenerPromedioPares(array) {
+    let arregloPar = obtenerarregloPar(array);
+    let acum = 0;
+    for (let i = 0; i < arregloPar.length; i++) {
+        acum = acum + arregloPar[i];
+    }
+    return console.log(`El promedio de numeros pares en el arreglo es de: ${acum/array.length}`);
+}
+console.log(obtenerPromedioPares(arreglo)); */
+
+/* 78. Ejercicio de funciones flecha:
+Convierte la función obtenerPromedioPares en una función flecha. */
+
+/* let arreglo = [1213, 324312, 52, 3154, 1535, 322, 63, 89, 325, 153, 614];
+function obtenerarregloPar(array) {
+    let nuevoArregloPar = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            nuevoArregloPar[indice] = array[i];
+            indice++;
+        }
+    }
+    return nuevoArregloPar;
+};
+let obtenerPromedioPares = array => {
+    let arregloPar = obtenerarregloPar(array);
+    let acum = 0;
+    for (let i = 0; i < arregloPar.length; i++) {
+        acum = acum + arregloPar[i];
+    }
+    return console.log(`El promedio de numeros pares en el arreglo es de: ${acum / array.length}`);
+}
+console.log(obtenerPromedioPares(arreglo)); */
+
+/* 79. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de palabras como argumento y devuelva un nuevo arreglo con solo las palabras que contengan la letra 'e'. */
+
+/* let arreglo = [`puerta`, `cocina`, `tigre`, `leon`, `computadora`, `carro`, `teclado`, `helicoptero`];
+let contieneE = function (array) {
+    let arregloN = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].includes('e')) {
+            arregloN[indice] = array[i];
+            indice++    
+        }
+    }
+    return console.log(arregloN);
+};
+contieneE(arreglo); */
+
+/* 80. Ejercicio de funciones:
+Crea una función llamada multiplicarElementos que tome un arreglo como argumento y devuelva el resultado de multiplicar todos los elementos del arreglo. */
+
+/* let arreglo = [3, 41, 23, 15, 3];
+function multiplicarElementos(array) {
+    acum = 1;
+    for (let i = 0; i < array.length; i++) {
+        acum = acum*array[i];
+    }
+    return console.log(`el resultado de la multiplicacionde los elementos es: ${acum}`);
+}
+multiplicarElementos(arreglo); */
+
+/* 81. Ejercicio de funciones:
+Crea una función llamada esSubstring que tome dos cadenas como argumento y devuelva true 
+si la segunda cadena es un subconjunto de la primera cadena y false si no lo es. */
+
+/* let cadena1 = `Hola soy un texto`;
+let cadena2 = `texto`;
+function esSubstring(cadena1, cadena2) {
+    if (cadena1.includes(cadena2)) {
+        return console.log(`La segunda cadena es un subconjunto de la primera cadena `, true);
+    } else {
+        return console.log(`la segunda cadena no es subconjunto de la primera cadena `, false);
+    }
+}
+esSubstring(cadena1, cadena2); */
+
+/* 82. Ejercicio de funciones flecha:
+Convierte la función esSubstring en una función flecha. */
+
+/* let cadena1 = `Hola soy un texto`;
+let cadena2 = `texto`;
+let esSubstring = array => cadena1.includes(cadena2) ? console.log(`La segunda cadena es un subconjunto de la primera cadena `, true) :
+    console.log(`la segunda cadena no es subconjunto de la primera cadena `, false);
+esSubstring(cadena1, cadena2); */
+
+/* 83. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva la diferencia entre el número más grande y el número más pequeño. */
+
+/* let arreglo = [13, 41, 23, 15, 3];
+function Mayor(array) {
+    let mayor = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > mayor) {
+            mayor = array[i];
+        }
+    }
+    return mayor;
+}
+function Menor(array) {
+    let menor = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] <= menor) {
+            menor = array[i];
+        }
+    }
+    return menor;
+}
+let Diferencia = array => console.log(Mayor(array) - Menor(array));
+Diferencia(arreglo); */
+
+/* 84. Ejercicio de funciones:
+Crea una función llamada convertirAObjeto que tome un arreglo de pares clave-valor 
+como argumento y devuelva un objeto donde las claves sean las primeras componentes de los pares y los valores sean las segundas componentes. */
+
+/* 85. Ejercicio de funciones flecha:
+Convierte la función convertirAObjeto en una función flecha. */
+
+/* 86. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de números como argumento y devuelva un nuevo arreglo con solo los números que sean divisibles tanto por 3 como por 5. */
+
+/* let numeros = [132, 14, 1643, 1644, 32, 353, 123, 146, 46, 23, 15, 30];
+function Divisible(array) {
+    let arregloN = [];
+    let indice = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 3 == 0 && array[i] % 5 == 0) {
+            arregloN[indice] = array[i];
+            indice++;
+        }
+    }
+    return console.log(arregloN);
+}
+Divisible(numeros); */
+
+/* 87. Ejercicio de funciones:
+Crea una función llamada calcularPotencia que tome dos números como argumento: la base y el exponente, y devuelva el resultado de elevar la base al exponente. */
+
+/* let numero1 = 2;
+let numero2 = 3;
+function calcularPotencia(num1, num2) {
+    return console.log(num1 ** num2);
+}
+calcularPotencia(numero1, numero2); */
+
+/* 88. Ejercicio de funciones flecha:
+Convierte la función calcularPotencia en una función flecha. */
+
+/* let numero1 = 2;
+let numero2 = 3;
+let Potencia = (num1, num2) => console.log(num1 ** num2);
+Potencia(numero1, numero2); */
+
+/* 89 Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de objetos como argumento y devuelva un nuevo arreglo con solo los objetos que tengan una propiedad precio mayor a 100. */
+
+/* let Objeto{
+    nombre: 'nombre';
+};
+let Precio = function (obj) {{
+
+} */
+
+/* 90. Ejercicio de funciones anónimas:
+Crea una función anónima que tome un arreglo de objetos como argumento y devuelva un nuevo arreglo con solo los objetos que tengan una propiedad precio mayor a 100. */
